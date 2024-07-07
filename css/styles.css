@@ -81,6 +81,8 @@ h2 {
     justify-content: center;
     align-items: center;
     color: white;
+    text-decoration: none;
+    transition: background-color    0.2s ease-in-out;
 }
 
 .navbar .item-container-selected {
@@ -99,6 +101,7 @@ h2 {
 
 .content {
     overflow-y: auto;
+    scroll-behavior: smooth;
     width: 100%;
     flex: 1;
     background-color: #2e3641;

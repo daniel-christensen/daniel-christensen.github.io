@@ -4,7 +4,9 @@ function loadContent(filePath, tabName) {
  
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            document.getElementById('content').innerHTML = xhr.responseText;
+            // Load content
+            var contentElement = document.getElementById('content');
+            contentElement.innerHTML = xhr.responseText;     
         }
     };
     xhr.send();
