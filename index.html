@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Daniel's Web Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap">	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">	
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div class="profile">
+			<div class="profile-content">
+				<img src="images/profile-image.jpg" alt="Daniel's Portrait" class="profile-img">
+				<h1>Daniel Christensen</h1>
+				<h2>Software Developer</h2>
+				<div class="link-wrapper">
+					<a href="http://daniel-christensen.github.io/" target="_blank">
+						<img src="/images/links/github.png" alt="GitHub"/>
+					</a>
+					<a href="https://www.linkedin.com/in/daniel-christensen-21652b1a0/" target="_blank">
+						<img src="/images/links/linkedin.png" alt="LinkedIn"/>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="navbar">
+				<div id="nav-projects" class="item-container" onclick="loadContent('pages/projects.html', 'nav-projects')">
+					PROJECTS
+				</div>
+				<div id="nav-tech" class="item-container" onclick="loadContent('pages/tech.html', 'nav-tech')">
+					TECH & SKILLS
+				</div>
+				<!--<div id="nav-experience" class="item-container" onclick="loadContent('pages/experience.html', 'nav-experience')">
+					EXPERIENCE
+				</div>
+				<div id="nav-education" class="item-container" onclick="loadContent('pages/education.html', 'nav-education')">
+					EDUCATION
+				</div>-->
+			</div>
+			<div class="content" id="content">
+ 				<!-- Content added via AJAX -->   
+			</div>	
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
